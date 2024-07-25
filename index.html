@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" type="text/css" />
+
+    <title>Document</title>
+  </head>
+
+  <body>
+    <h1>Events nd Inputs</h1>
+
+    <canvas id="can1"> </canvas>
+
+    <br />
+
+    <input type="button" value="Add" id="addcolor" onclick="staticColor()" />
+    <input
+      type="text"
+      id="colorname"
+      placeholder="color, hex or RGB()..."
+      onclick="dynamicColor()"
+    />
+
+    <br />
+
+    <input type="color" value="#0000FF" id="clr" onclick="dynamicColor()" />
+
+    <br />
+
+    <input
+      type="range"
+      min="10"
+      max="100"
+      value="10"
+      id="slider"
+      oninput="dorect()"
+    />
+
+    <script src="script.js"></script>
+  </body>
+</html>
